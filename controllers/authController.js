@@ -19,7 +19,8 @@ authController.post("/register", async (req, res) => {
     const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET);
     return res.status(201).json({ user: others, token });
   } catch (error) {
-    return res.status(500).json(error);
+    console.error(error);
+  return res.status(500).json({ error: error.message });
   }
 });
 
