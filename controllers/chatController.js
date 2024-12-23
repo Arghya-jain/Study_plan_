@@ -171,5 +171,4 @@ chatController.get('/getSummary/:id',verifyToken,async(req,res)=>{
     return res.status(500).json({msg:'Cant get summary', error});
   }
 })
-
 export default chatController;

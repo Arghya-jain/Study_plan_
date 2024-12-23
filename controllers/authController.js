@@ -45,5 +45,4 @@ authController.post("/login", async (req, res) => {
       .json({ error: "Something went wrong. Please try again later." });
   }
 });
-
 export default authController;
