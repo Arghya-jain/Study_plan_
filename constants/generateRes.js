@@ -16,6 +16,4 @@ const generateResponse = async (userhistory, message) => {
     const result = await chat.sendMessage(message);
     return result.response.text();
 }
-
-
 export default generateResponse;

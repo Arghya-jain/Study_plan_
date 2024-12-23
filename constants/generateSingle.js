@@ -13,6 +13,4 @@ const generateSingle = async ( message) => {
     const result = await model.generateContent(message);
     return result.response.text();
 }
-
-
 export default generateSingle;
