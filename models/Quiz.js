@@ -17,5 +17,4 @@ const quizSchema = new Schema(
     timestamps: true, // Automatically adds createdAt and updatedAt fields
   }
 );
-
 export default model("Quiz", quizSchema);

@@ -26,5 +26,4 @@ const quizzesSchema = new Schema({
     },
   ],
 });
-
 export default model("Quizzes", quizzesSchema);
